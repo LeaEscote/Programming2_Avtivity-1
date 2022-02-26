@@ -1,0 +1,46 @@
+import java.util.Arrays;
+
+public class Anagram {
+ 
+ public static void main(String args[]) {
+String str1="Java";
+String str2="Ajav";
+
+str1=str1.toLowerCase(); //java
+str2=str2.toLowerCase(); //avaj
+
+if(str1.length()!=str2.length()) {
+    System.out.println(" Not Anagram ");
+    }
+    if(str1.length()!=str2.length()) {
+        System.out.println("Not Anagram ---");
+        }
+        else {
+   char[] string1=str1.toCharArray();
+   char[] string2=str2.toCharArray();
+     
+Arrays.sort(string1); // a j a v
+Arrays.sort(string2); // a j a v
+    
+System.out.println("string 1 firstvalue " +string1[0]);
+System.out.println(" string 1 secondvalue " +string1[1]);
+System.out.println(" string1 thirdvalue " +string1[2]);
+System.out.println("string1 fourthvalue " +string1[3]);
+
+System.out.println("string 2 firstvalue " +string2[0] );
+System.out.println("string 2 secondvalue " +string2[1] );
+System.out.println("string 2 thirdvalue " +string2[2] );
+System.out.println("string 2 fourthvalue " +string2[3] );
+
+if(Arrays.equals(string1, string2)==true) {
+System.out.println("Both are anagram");
+}
+else {
+    System.out.println("Not Anagram ****");
+    }
+
+  }
+
+ }
+
+}
